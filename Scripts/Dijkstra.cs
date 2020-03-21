@@ -100,7 +100,7 @@ public static class Dijkstra
         NodeRecord startRecord = new NodeRecord();
         startRecord.node = start;
         startRecord.connection = null;
-        startRecord.costSoFar = 0;
+        startRecord.costSoFar = startRecord.node.weight;
 
         // Initialize the open and closed lists
         PathfindingList open = new PathfindingList();

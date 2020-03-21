@@ -33,7 +33,7 @@ public class Graph
         {
             foreach (Node toNode in fromNode.ConnectsTo)
             {
-                float cost = (toNode.transform.position - fromNode.transform.position).magnitude;
+                float cost = (toNode.weight - fromNode.weight);
                 Connection c = new Connection(cost, fromNode, toNode);
                 mConnections.Add(c);
             }
